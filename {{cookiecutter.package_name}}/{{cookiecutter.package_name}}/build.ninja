@@ -1,0 +1,6 @@
+rule uic
+    command = pyside6-uic $in -o $out
+rule rcc
+    command = pyside6-rcc $in -o $out
+build Ui_MainWindow.py: uic mainwindow.ui
+build resources.py: rcc resources.qrc

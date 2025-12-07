@@ -1,0 +1,7 @@
+{
+    "package_name": "mypackage",
+    "author": "John Doe",
+    "author_email": "johndoe@example.com",
+    "description": "sample package",
+    "url": "https://github.com/johndoe/mypackage"
+}
