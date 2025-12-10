@@ -1,5 +1,6 @@
 {
     "package_name": "mypackage",
+    "flavour": ["pyside6", "pyqt5"],
     "author": "John Doe",
     "author_email": "johndoe@example.com",
     "description": "sample package",

@@ -16,6 +16,11 @@ setup(
     description = "{{cookiecutter.description}}",
     long_description = long_description,
     long_description_content_type = 'text/markdown',
+{% if cookiecutter.flavour == "pyside6" %}
+    install_requires = ['PySide6'],
+{% elif cookiecutter.flavour == "pyqt5" %}
+    install_requires = ['PyQt5'],
+{% endif %}
     entry_points = {
         'gui_scripts': [
             '{{cookiecutter.package_name}} = {{cookiecutter.package_name}}:main'

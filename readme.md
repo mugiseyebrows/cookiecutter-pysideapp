@@ -1,6 +1,6 @@
 # cookiecutter-qtapp
 
-cookiecutter PySide6 app template
+cookiecutter PySide6 (PyQt5) app template
 
 # use
 

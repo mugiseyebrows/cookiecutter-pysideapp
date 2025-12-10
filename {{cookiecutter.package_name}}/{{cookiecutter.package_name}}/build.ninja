@@ -1,6 +1,14 @@
+{% if cookiecutter.flavour == "pyside6" %}
 rule uic
     command = pyside6-uic $in -o $out
 rule rcc
     command = pyside6-rcc $in -o $out
+{% elif cookiecutter.flavour == "pyqt5" %}
+rule uic
+    command = pyuic5 $in -o $out
+rule rcc
+    command = pyrcc5 $in -o $out
+{% endif %}
+
 build Ui_MainWindow.py: uic mainwindow.ui
 build resources.py: rcc resources.qrc
